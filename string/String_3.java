@@ -36,7 +36,7 @@ public class String_3 {
 		str3 += '\0';
 		int j = 0;
 		while (str3.charAt(j) != '\0') {
-			if (str3.charAt(j) > 96 && str3.charAt(j) < 121) {
+			if (str3.charAt(j) > 96 && str3.charAt(j) < 122) {
 				c = (char) (str3.charAt(j) - 32);
 
 			} else {
