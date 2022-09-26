@@ -42,18 +42,18 @@ public class Array_3 {
 		sizeofarray = sizeofarray * 2;
 	}
 
-//creating a function that deletes an element at the specified index  
+//Creating a function that deletes an element at the specified index  
 	public void addElementAt(int index, int a) {
-//compare the size with the number of elements if not equal grows the array size  
+//Compare the size with the number of elements if not equal grows the array size  
 		if (count == sizeofarray) {
-//invoking growSize() method  
+//Invoking growSize() method  
 			growSize();
 		}
 		for (int i = count - 1; i >= index; i--) {
-//shifting all the elements to the left from the specified index  
+//Shifting all the elements to the left from the specified index  
 			array[i + 1] = array[i];
 		}
-//inserts an element at the specified index  
+//Inserts an element at the specified index  
 		array[index] = a;
 		count++;
 	}
